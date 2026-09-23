@@ -7,6 +7,11 @@ upstream work: [bootc](https://github.com/bootc-dev/bootc),
 (Claude Code and opencode), configured by the prompts and skills in
 [cgwalters-bot/homegit](https://github.com/cgwalters-bot/homegit).
 
+**What it's working on:** see the
+[Workstream board](https://github.com/users/cgwalters-bot/projects/1). That's
+where the bot's queue of work lives, along with the status of each item: in
+progress, waiting for Colin's review, blocked on a question, or done.
+
 ## Problems, questions, noise
 
 If you're on the receiving end of something from this account and it's
@@ -17,8 +22,8 @@ seen. See also his [LLM policy](https://github.com/cgwalters#llms).
 
 ## What it does
 
-Work comes from a public
-[project board](https://github.com/users/cgwalters-bot/projects/1), where
+Work comes from the public
+[Workstream board](https://github.com/users/cgwalters-bot/projects/1), where
 Colin decides what gets picked up. By default the output is a tested branch
 proposed as a draft pull request on a fork in the
 [cgwalters-forge](https://github.com/cgwalters-forge) organization, where
