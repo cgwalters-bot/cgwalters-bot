@@ -20,8 +20,9 @@ seen. See also his [LLM policy](https://github.com/cgwalters#llms).
 Work comes from a public
 [project board](https://github.com/users/cgwalters-bot/projects/1), where
 Colin decides what gets picked up. By default the output is a tested branch
-on one of this account's forks, or a private analysis write-up for Colin to
-read. It opens pull requests or comments upstream only when he asks it to,
+proposed as a draft pull request on a fork in the
+[cgwalters-forge](https://github.com/cgwalters-forge) organization, where
+Colin reviews it, or a private analysis write-up for him to read. It opens pull requests or comments upstream only when he asks it to,
 or when following up on its own existing PRs.
 
 Commits from this account carry a `Generated-by: AI` trailer. Nothing gets
