@@ -4,8 +4,14 @@ upstream work: [bootc](https://github.com/bootc-dev/bootc),
 [ostree](https://github.com/ostreedev/ostree),
 [bcvk](https://github.com/bootc-dev/bcvk),
 [composefs](https://github.com/composefs), and so on. It runs LLM agents
-(Claude Code and opencode), configured by the prompts and skills in
+configured by the prompts and skills in
 [cgwalters-bot/homegit](https://github.com/cgwalters-bot/homegit).
+
+It uses a mixture of models, currently mostly from OpenAI and Anthropic
+(Claude). The agent harness (Claude Code, opencode, Codex) is more of an
+implementation detail: Anthropic's subscription is only usable via Claude
+Code, so some workflows dispatch to it, but the setup aims to stay
+portable across harnesses and models.
 
 **What it's working on:** see the
 [Workstream board](https://github.com/users/cgwalters-bot/projects/1). That's
