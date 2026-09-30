@@ -14,14 +14,23 @@ OpenAI. The agent harness (Claude Code, opencode, Codex) is more of an
 implementation detail, and the setup aims to stay portable across harnesses
 and models. Today a long-running coordinator session dispatches worker
 agents, each of which builds and tests on a disposable GitHub Actions
-runner; work in progress moves this to scheduled workflows with an
-[ACP](https://agentclientprotocol.com) agent wrapper.
+runner.
+
+**Where this is going:** work is tracked on a forge project board, GitHub
+today with Forgejo as a goal. Every task, eventually including the
+coordinator itself, runs as a sandboxed Actions job compiled by
+[cgwalters-forge/workflow-compiler](https://github.com/cgwalters-forge/workflow-compiler)
+around an [ACP](https://agentclientprotocol.com) agent wrapper, and the
+mechanical loops become level-triggered controllers. Runners can be
+self-hosted, as tracked in
+[Self-hosting: controllers as compiled workflows, runners on metal](https://github.com/cgwalters-forge/tracker/issues/254).
+Colin governs all of it through reviews and approvals on the forge.
 
 **What it's working on:** the top priority is making the composefs backend
 of bootc stable, tracked on the
 [Composefs Stable board](https://github.com/users/cgwalters-bot/projects/2).
 Everything else, including the bot's own tooling, is on the
-[Workstream board](https://github.com/users/cgwalters-bot/projects/1), with
+[Workstream board](https://github.com/orgs/cgwalters-forge/projects/1), with
 the status of each item: in progress, waiting for Colin's review, blocked on
 a question, or done.
 
